@@ -6,30 +6,6 @@
   box-sizing: border-box;
 }
 
-a:link {
-  color: #FFA5B8;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #FFA5B8;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: #FFA5B8;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
 body {
   font-family: Arial;
   padding: 10px;
@@ -40,7 +16,7 @@ body {
 .header {
   padding: 30px;
   color: white;
-  text-shadow: 2px 2px pink;
+  text-shadow: 2px 2px #FFA5B8;
   text-align: center;
 }
 
@@ -75,6 +51,19 @@ body {
 /* Left column */
 .leftcolumn {   
   float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
   width: 100%;
 }
 
@@ -119,9 +108,8 @@ body {
 <body>
 
 <div class="header">
-  <h2>♡ WELCOME TO MY COMMISSION PAGE! ♡</h2>
+  <h1>♡ JNVY ♡</h1>
   <p>Please check my rules and guidelines before submitting a commission request. Thank you ♡</p>
-  <p><a href="https://twitter.com/itsjnvy">TWITTER</a> ✿ <a href="https://www.twitch.tv/jnvy">TWITCH</a></p>
 </div>
 
 <div class="topnav">
@@ -134,20 +122,36 @@ body {
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2 style="color:#FFA5B8">COMMISSION INFORMATION</h2>
-      <h5 style="color:#FFA5B8">Commission Status, Mar 22, 2019</h5>
+      <h2>COMMISSION INFORMATION</h2>
+      <h5>Commission Status, Mar 22, 2019</h5>
       <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
-      <h5 style="color:#FFA5B8">Commissions: <b>CLOSED ✿</b></h5>
-      <h5 style="color:#FFA5B8">Current Queue: <b>CLICK ME ✿</b></h5>
-      <h5 style="color:#FFA5B8"><font size="1">(Rush orders + emote/sub badge edits are open!)</font></h5>
+      <p>Commissions: <b>CLOSED ✿</b></p>
+      <p>Current Queue: <b>CLICK ME ✿</b></p>
+      <p><font size="1">(Rush orders + emote/sub badge edits are open!)</font></p>
     </div>
     <div class="card">
-      <h2 style="color:#FFA5B8">COMMISSION INFORMATION</h2>
-      <h5 style="color:#FFA5B8">Commission Status, Mar 22, 2019</h5>
+      <h2>LATEST UPDATES</h2>
+      <h5>Commission Updates, Mar 22, 2019</h5>
       <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
-      <h5 style="color:#FFA5B8">Commissions: <b>CLOSED ✿</b></h5>
-      <h5 style="color:#FFA5B8">Current Queue: <b>CLICK ME ✿</b></h5>
-      <h5 style="color:#FFA5B8"><font size="1">(Rush orders + emote/sub badge edits are open!)</font></h5>
+      <p><b>3/22/2019</b> | Pricing has been updated</p>
+      <p><b>3/22/2019</b> | Rules and Guidelines have been updated</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
+      <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
+      <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
     </div>
   </div>
 </div>
