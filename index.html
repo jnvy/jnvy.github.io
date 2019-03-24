@@ -144,18 +144,19 @@ body {
   color: #DF9CAA;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
+/* Create four equal columns that floats next to each other */
+.column {
   float: left;
-  width: 50%;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 50%;
-  padding-left: 20px;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Fake image */
@@ -248,25 +249,6 @@ body {
       <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
       <p style="color:#40292E;"><b>3/22/2019</b> | Pricing has been updated</p>
       <p style="color:#40292E;"><b>3/22/2019</b> | Rules and Guidelines have been updated</p>
-    </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2 style="color:#FFA5B8;">About Me</h2>
-      <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    </div>
-    <p><center> ━━━━━━━🌸🌸━━━━━━━ </center></p>
-    <div class="card">
-      <h3 style="color:#FFA5B8;">Popular Post</h3>
-      <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
-      <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
-      <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
-    </div>
-    <p><center> ━━━━━━━🌸🌸━━━━━━━ </center></p>
-    <div class="card">
-      <h3 style="color:#FFA5B8;">Follow Me</h3>
-      <p>Some text..</p>
     </div>
   </div>
 </div>
