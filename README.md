@@ -1,3 +1,2 @@
 # jnvy.github.io
-Website
-Example:
+Website Use: Commissions and Art
