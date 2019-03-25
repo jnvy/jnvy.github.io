@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>JNVY</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JNVY</title>
 <link rel="icon" href="https://i.imgur.com/8M2nbhf.png" type="image/gif" sizes="16x16">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
 
 /* width */
@@ -186,10 +187,11 @@ body {
   margin-top: 20px;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -202,9 +204,6 @@ body {
 }
 </style>
 </head>
-
-<!-- !PAGE CONTENT! -->
-
 <body>
 
 <div id="hellobar-bar" class="regular closable">
@@ -331,11 +330,10 @@ body {
     </div>
   </div>
 </div>
-  
+
 <div class="footer">
   <h5 style="color:#FFA5B8">Created by JNVY | Twitter: @itsjnvy | Twitch: @jnvy</h5>
 </div>
-
 
 </body>
 </html>
