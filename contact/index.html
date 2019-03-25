@@ -7,6 +7,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
 <style>
 
 /* width */
@@ -262,15 +270,17 @@ body {
 
 <div class="row">
   <div class="column">
-    <div class="card">
+    <div class="card">      
       <h2 style="color:#FFA5B8;">CONTACT FORM</h2>
-      
       <div class="container">
-        <label for="fname">Name</label>
-        <input type="text" id="fnamesocial" name="namesocial" placeholder="(Please include your social media handle if possible!)">
+      
+      <form name="gform" id="gform" enctype="text/plain" action="https://goo.gl/forms/QZ1fwFBX2PrFHvIi2" target="hidden_iframe" onsubmit="submitted=true;">
+      
+        <label for="fname">Name & Best Way to Contact You</label>
+        <input type="text" name="entry.901742021" id="entry.901742021" placeholder="(Please include your social media handle if possible!)">
   
         <label for="lname">Commission Type</label>
-        <select id="commission type" name="commission type">
+        <select id="entry.5785476" name="entry.5785476">
         <option value="australia">Twitch Emotes ♡ $25 per</option>
         <option value="canada">Twitch Sub Badges ♡ $20 per</option>
     <option value="canada">Icon ♡ $25</option>
@@ -281,22 +291,26 @@ body {
   </select>
   
   <label for="fname">Character Reference</label>
-  <input type="text" id="freference" name="reference" placeholder="(IMPORTANT: PLEASE include reference links!)">
+  <input type="text" name="entry.1567744030" id="entry.1567744030" placeholder="(IMPORTANT: PLEASE include reference links!)">
   
   <label for="fname">Number of Emotes/Sub Badges</label>
-  <input type="text" id="fnumemosub" name="numemosub" placeholder="(For twitch emotes/sub badges ONLY!)">
+  <input type="text" name="entry.191759858" id="entry.191759858" placeholder="(For twitch emotes/sub badges ONLY!)">
   
   <label for="fname">Expressions for each Character</label>
-  <input type="text" id="fexpression" name="expression" placeholder="(Remember to put multiple expression if there's multiple characters!)">
+  <input type="text" name="entry.1990438673" id="entry.1990438673" placeholder="(Remember to put multiple expression if there's multiple characters!)">
   
   <label for="fname">Rush Order? (Optional)</label>
-  <input type="text" id="frushorder" name="rushorder" placeholder="(Specific date you need this commission by - additional costs!)">
+  <input type="text" name="entry.223675082" id="entry.223675082" placeholder="(Specific date you need this commission by - additional costs!)">
   
   <label for="fname">Additional Information</label>
-  <textarea id="fadditional" name="additional" placeholder="(Any extras you'd like to include such as props, background, etc. | Remember, the more detailed it is, the more pricey it'll be!)" style="height:200px"></textarea>
+  <textarea id="entry.882904659" name="entry.882904659" placeholder="(Any extras you'd like to include such as props, background, etc. | Remember, the more detailed it is, the more pricey it'll be!)" style="height:200px"></textarea>
 
   <input type="submit" value="Submit">
-</div>
+    </form>
+    
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    
+      </div>
     </div>
   </div>
 </div>
