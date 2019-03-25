@@ -181,17 +181,10 @@ body {
 
 /* Create four equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 25%;
+  margin: auto;
+  width: 40%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  height: 950px; /* Should be removed. Only for demonstration */
 }
 
 /* Fake image */
@@ -268,17 +261,18 @@ body {
 </div>
 
 <div class="row">
-  <div class="leftcolumn">
+  <div class="column">
     <div class="card">
       <h2 style="color:#FFA5B8;">CONTACT FORM</h2>
+      
       <div class="container">
-  <label for="fname">Name</label>
-  <input type="text" id="fnamesocial" name="namesocial" placeholder="(Please include your social media handle if possible!)">
+        <label for="fname">Name</label>
+        <input type="text" id="fnamesocial" name="namesocial" placeholder="(Please include your social media handle if possible!)">
   
-  <label for="lname">Commission Type</label>
-  <select id="commission type" name="commission type">
-    <option value="australia">Twitch Emotes ♡ $25 per</option>
-    <option value="canada">Twitch Sub Badges ♡ $20 per</option>
+        <label for="lname">Commission Type</label>
+        <select id="commission type" name="commission type">
+        <option value="australia">Twitch Emotes ♡ $25 per</option>
+        <option value="canada">Twitch Sub Badges ♡ $20 per</option>
     <option value="canada">Icon ♡ $25</option>
     <option value="canada">Chibi ♡ $40 - 50</option>
     <option value="canada">Headshot ♡ $40 - 50</option>
@@ -287,16 +281,16 @@ body {
   </select>
   
   <label for="fname">Character Reference</label>
-  <input type="text" id="freference" name="reference" placeholder="(This is probably the most important part, so PLEASE make sure you include it!)">
+  <input type="text" id="freference" name="reference" placeholder="(IMPORTANT: PLEASE include reference links!)">
   
   <label for="fname">Number of Emotes/Sub Badges</label>
-  <input type="text" id="fnumemosub" name="numemosub" placeholder="(Required if you are filling this form out for twitch emotes and/or sub badges!)">
+  <input type="text" id="fnumemosub" name="numemosub" placeholder="(For twitch emotes/sub badges ONLY!)">
   
   <label for="fname">Expressions for each Character</label>
   <input type="text" id="fexpression" name="expression" placeholder="(Remember to put multiple expression if there's multiple characters!)">
   
   <label for="fname">Rush Order? (Optional)</label>
-  <input type="text" id="frushorder" name="rushorder" placeholder="(Please specify the exact date you need this commission by - remember this means 50% of the total order will be added on top!)">
+  <input type="text" id="frushorder" name="rushorder" placeholder="(Specific date you need this commission by - additional costs!)">
   
   <label for="fname">Additional Information</label>
   <textarea id="fadditional" name="additional" placeholder="(Any extras you'd like to include such as props, background, etc. | Remember, the more detailed it is, the more pricey it'll be!)" style="height:200px"></textarea>
