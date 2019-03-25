@@ -32,7 +32,42 @@
 * {
   box-sizing: border-box;
 }
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body,h1,h2,h3,h4,h5,h6,textarea,select {font-family: "Raleway", sans-serif}
+
+/* Boxes */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #FFA5B8;
+  background-color: #FFECED;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Submit Box */
+input[type=submit] {
+  background-color: #FFC4D0;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Submit Box Hover */
+input[type=submit]:hover {
+  background-color: #FFA5B8;
+}
+
+/* Contact Form Card*/
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
 
 body {
   margin: 0;
@@ -235,39 +270,39 @@ body {
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2 style="color:#FFA5B8;">COMMISSION INFORMATION</h2>
-      <h5 style="color:#FFD2DB;">Commission Status, Mar 22, 2019</h5>
-      <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
-      <p style="color:#40292E;">Commissions: <b style="color:#FFA5B8;">CLOSED ✿</b></p>
-      <p style="color:#40292E;">Current Queue: <b style="color:#FFA5B8;">CLICK ME ✿</b></p>
-      <p style="color:#40292E;"><font size="1">(Rush orders + emote/sub badge edits are open!)</font></p>
-    </div>
-    <p><center> ━━━━━━━🌸🌸━━━━━━━ </center></p>
-    <div class="card">
-      <h2 style="color:#FFA5B8;">LATEST UPDATES</h2>
-      <h5 style="color:#FFD2DB;">Commission Updates, Mar 22, 2019</h5>
-      <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
-      <p style="color:#40292E;"><b>3/22/2019</b> | Pricing has been updated</p>
-      <p style="color:#40292E;"><b>3/22/2019</b> | Rules and Guidelines have been updated</p>
-    </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2 style="color:#FFA5B8;">About Me</h2>
-      <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    </div>
-    <p><center> ━━━━━━━🌸🌸━━━━━━━ </center></p>
-    <div class="card">
-      <h3 style="color:#FFA5B8;">Popular Post</h3>
-      <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
-      <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
-      <img src="https://i.imgur.com/MqcFc7u.gif" alt="Sakura">
-    </div>
-    <p><center> ━━━━━━━🌸🌸━━━━━━━ </center></p>
-    <div class="card">
-      <h3 style="color:#FFA5B8;">Follow Me</h3>
-      <p>Some text..</p>
+      <h2 style="color:#FFA5B8;">CONTACT FORM</h2>
+      <div class="container">
+  <label for="fname">Name</label>
+  <input type="text" id="fnamesocial" name="namesocial" placeholder="(Please include your social media handle if possible!)">
+  
+  <label for="lname">Commission Type</label>
+  <select id="commission type" name="commission type">
+    <option value="australia">Twitch Emotes ♡ $25 per</option>
+    <option value="canada">Twitch Sub Badges ♡ $20 per</option>
+    <option value="canada">Icon ♡ $25</option>
+    <option value="canada">Chibi ♡ $40 - 50</option>
+    <option value="canada">Headshot ♡ $40 - 50</option>
+    <option value="canada">Half Body/Thigh Up ♡ $65 - 75</option>
+    <option value="canada">Full Body ♡ $85 - 100+</option>
+  </select>
+  
+  <label for="fname">Character Reference</label>
+  <input type="text" id="freference" name="reference" placeholder="(This is probably the most important part, so PLEASE make sure you include it!)">
+  
+  <label for="fname">Number of Emotes/Sub Badges</label>
+  <input type="text" id="fnumemosub" name="numemosub" placeholder="(Required if you are filling this form out for twitch emotes and/or sub badges!)">
+  
+  <label for="fname">Expressions for each Character</label>
+  <input type="text" id="fexpression" name="expression" placeholder="(Remember to put multiple expression if there's multiple characters!)">
+  
+  <label for="fname">Rush Order? (Optional)</label>
+  <input type="text" id="frushorder" name="rushorder" placeholder="(Please specify the exact date you need this commission by - remember this means 50% of the total order will be added on top!)">
+  
+  <label for="fname">Additional Information</label>
+  <textarea id="fadditional" name="additional" placeholder="(Any extras you'd like to include such as props, background, etc. | Remember, the more detailed it is, the more pricey it'll be!)" style="height:200px"></textarea>
+
+  <input type="submit" value="Submit">
+</div>
     </div>
   </div>
 </div>
