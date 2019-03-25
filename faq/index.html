@@ -144,17 +144,18 @@ body {
   color: #DF9CAA;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
+/* Create four equal columns that floats next to each other */
+.column {
   float: left;
-  width: 50%;
+  width: 25%;
+  padding: 10px;
 }
 
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 50%;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Fake image */
@@ -166,16 +167,8 @@ body {
 /* Add a card effect for articles */
 .card {
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   margin-top: 20px;
-  text-align: center;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Footer */
@@ -186,15 +179,23 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1400px) {
+  .column {   
+    width: 50%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
+  .column {   
     width: 100%;
     padding: 0;
   }
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .topnav a {
     float: none;
     width: 100%;
@@ -232,7 +233,9 @@ body {
 
 
 <div class="row">
-  <div class="leftcolumn">
+  <div class="column">
+  </div>
+  <div class="column">
     <div class="card">
       <h2 style="color:#FFA5B8;"><u>TERMS OF SERVICE</u></h2>
         <h5 style="color:#FFD2DB;">Commission Service Terms, Mar 22, 2019</h5>
@@ -277,7 +280,7 @@ body {
         <p style="color:#40292E;"><u>Rush fee</u> = 50% of the total order cost added on top of your full order.</p>
       </div>
   </div>
-  <div class="rightcolumn">
+  <div class="column">
     <div class="card">
       <h2 style="color:#FFA5B8;"><u>COMMISSION FORMS</u></h2>
       <h5 style="color:#FFD2DB;">Commission Forms, Mar 22, 2019</h5>
@@ -339,6 +342,8 @@ body {
     Rush Order? (If yes, date needed)<br />
     Add-Ons (Small Props, Details, Background, etc.):<br /></p>
     </div>
+  </div>
+  <div class="column">
   </div>
 </div>
 
